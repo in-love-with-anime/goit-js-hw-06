@@ -7,7 +7,7 @@ const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toStrin
 
 const onChangeColor= () => {
   bodyColorEl.style.backgroundColor = getRandomHexColor();
-  textColorEl.textContent = getRandomHexColor();
+  textColorEl.textContent = bodyColorEl.style.backgroundColor;
 }
 
 
